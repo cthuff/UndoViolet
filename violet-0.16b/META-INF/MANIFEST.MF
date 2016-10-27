@@ -1,0 +1,658 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.2
+permissions: sandbox
+Created-By: 1.8.0_102-b14 (Oracle Corporation)
+Main-Class: com.horstmann.violet.UMLEditor
+
+Name: com/horstmann/violet/framework/FileService.class
+SHA-256-Digest: wrlgp/BS6f3S2w50SNj0MswYqbOnKtFLajgIp4pOiKY=
+
+Name: com/horstmann/violet/framework/FileService$Save.class
+SHA-256-Digest: S2hRbxPYMSSObZ7a3Z6ptyQNHISnzQo2bIN+kqGqsyQ=
+
+Name: com/horstmann/violet/framework/AbstractEdge.class
+SHA-256-Digest: ia/rgLtAv+lPlJEL+3V+/Bz25BBhhwV6SzOO9qIHcHs=
+
+Name: com/horstmann/violet/framework/AbstractEdge.java
+SHA-256-Digest: osp2NdzLB5dxUxtwbLB505x8C4YwlN3xzKp6rYx4NTg=
+
+Name: com/horstmann/violet/ClassNodeBeanInfo.class
+SHA-256-Digest: 9hN1AvU0D7Ryn6PWhab+tee0YP0TAhlZIphXLQoIyfE=
+
+Name: com/horstmann/violet/framework/VersionChecker.class
+SHA-256-Digest: uz9/YklKYVgpTWrl62wEdMEEAm65MSYqyUnzIlWdaFg=
+
+Name: com/horstmann/violet/framework/ToolBar$6.class
+SHA-256-Digest: L4Ve1I485HVZ/xXXsLsBZdXnle/WkbzwD1vBmDfxdn0=
+
+Name: com/horstmann/violet/CallEdgeBeanInfo.java
+SHA-256-Digest: vdZa+EKxmqmUsuCGKcrIqqSuG2YPNCW6z2URoCzZq7M=
+
+Name: com/horstmann/violet/ClassNode.class
+SHA-256-Digest: Aj6hljINFFOhlrPnMVNlZiq5pWgdKoYjv0qM5XPyu88=
+
+Name: com/horstmann/violet/framework/EditorFrame$6.class
+SHA-256-Digest: YmXC4mpebT0OX7uhmgk6HzjwbQ+WfaEb3tIXLgBEYSM=
+
+Name: com/horstmann/violet/ClassRelationshipEdgeBeanInfo.java
+SHA-256-Digest: oVOOWFyQl8+yJ+56bGhhs/j8xXPkBukq02ZyAKbttyU=
+
+Name: com/horstmann/violet/ObjectReferenceEdge.java
+SHA-256-Digest: 4XbI12j0UyPygN5Rb3acTBmefPZKcBNmS/RjwBYAJTc=
+
+Name: com/horstmann/violet/framework/PrintDialog$3.class
+SHA-256-Digest: tfQF89ArKlE+U4U5mRyHarJp31XcentRBSdmsx1NiHc=
+
+Name: com/horstmann/violet/framework/GraphFrame.java
+SHA-256-Digest: 8OwaP21Tf/nRBtG0S3xAi29aCd70DdLCb4aWRduF038=
+
+Name: com/horstmann/violet/CallEdge.java
+SHA-256-Digest: GmRrAe2djwjzyCh9G4nBrkImOs3B2Ssv1AVVVpY0acM=
+
+Name: com/horstmann/violet/framework/EditorFrame$21.class
+SHA-256-Digest: vjN+rAGJ6oKokRg8Zs7uKiPxJivsfKF2ecgR1RmFt5M=
+
+Name: com/horstmann/violet/framework/JNLPFileService.class
+SHA-256-Digest: 2ZAcMj9qte/yhixfGexQ30P+pI1WY2CdhQhfR3YKw5w=
+
+Name: com/horstmann/violet/CallNodeBeanInfo.java
+SHA-256-Digest: htWI0hlZU6y9aLj4AUFdmQwua6P2rpGsOjcM0Y/V9no=
+
+Name: com/horstmann/violet/PointNode.class
+SHA-256-Digest: ibx0DJzPTm5BwMpaGcVj8of3nJvMJoCCUAJUDiFzJ50=
+
+Name: com/horstmann/violet/framework/RectangularNode.java
+SHA-256-Digest: YqlumWKDs2hllmg1GoGYawMph/Ayd6Yb4/q8a73iZRk=
+
+Name: com/horstmann/violet/framework/FileService$Open.class
+SHA-256-Digest: aUt7zrfivDCucmM4kOr3wXifKq59L/eTrnSh38/m7MY=
+
+Name: com/horstmann/violet/framework/SegmentedLineEdge.class
+SHA-256-Digest: BvCO/wIltQIW47gXrG1UFgSINBC2AT26rSt0p/tsLf4=
+
+Name: com/horstmann/violet/ObjectDiagramGraphStrings.properties
+SHA-256-Digest: WRzEOwhB2IYv/6U2LPee7vy1nZKQUBPFGpgVi5fXJkw=
+
+Name: com/horstmann/violet/framework/MultiLineStringEditor$1.class
+SHA-256-Digest: flGAaCjuZjJHpueC6X41AmkGFrzfCfDBTQtJOv08TU0=
+
+Name: com/horstmann/violet/ClassDiagramGraph.java
+SHA-256-Digest: 3ymyQlYqyTcqhTmChGl5+McBE9uOzzN2czoiBnMdIfM=
+
+Name: com/horstmann/violet/CallNode.class
+SHA-256-Digest: CMJ8RB5Ed+5Hbt65Z1Xgtj6XQIvpB075Tc8vz26zUZU=
+
+Name: com/horstmann/violet/framework/EditorFrame$19.class
+SHA-256-Digest: c5lOu58eur5CtUrS+eoZ9+asDKtUm5X42g2PhvJjVj4=
+
+Name: com/horstmann/violet/framework/Graph.java
+SHA-256-Digest: 326UR6+tig3ljT/XZR/HHal6AD61wno4cjPNidrMD00=
+
+Name: com/horstmann/violet/framework/JNLPFileService$2.class
+SHA-256-Digest: ADPqkGs8QdGtme+249nRFwKHlO+Oy3Mo7OWNXpc9A/I=
+
+Name: com/horstmann/violet/framework/ResourceFactory.class
+SHA-256-Digest: M3YA6WVDL5Ion4xhtrX7STbOY/xBQzE4AqXmNtY/6pE=
+
+Name: com/horstmann/violet/ClassDiagramGraph.class
+SHA-256-Digest: cG/6hG154LnXTY++ED99/R1rZRkfjLrdM6UMY5nY+tM=
+
+Name: violet.jnlp.template
+SHA-256-Digest: 8HVUrmTFYh44rxHDEyj6fy5k6DGjhhWEzvfFqK2861E=
+
+Name: com/horstmann/violet/LineStyleEditor.java
+SHA-256-Digest: 9WJQNWaegS5oxskwjXKn5dx5i2Ws1kP12kIODx6AvlU=
+
+Name: com/horstmann/violet/framework/MultiLineStringEditor$2.class
+SHA-256-Digest: 6U1a4wLPc/BHHl6qsTK0GTUty9QJfI/NKEyH3oI0n6k=
+
+Name: com/horstmann/violet/NoteEdge.java
+SHA-256-Digest: fF5BptFmWZeSQnlNAoKoQE+saWZMocrum7kvB3IxNgY=
+
+Name: com/horstmann/violet/framework/JNLPFileService$1.class
+SHA-256-Digest: uVoi0zvFjrO2iAat09E9xvchMGqEh2EuAxRMy8SCJD4=
+
+Name: com/horstmann/violet/CallNode.java
+SHA-256-Digest: FePfhrNWhSiHhLEDIJRvMey1y5WwqGvrIitvLvQDQjw=
+
+Name: com/horstmann/violet/FieldNode.class
+SHA-256-Digest: fIoeaaAvVLixH4fGCjWd/Yec5j/YQDKoWlWAAwex5QA=
+
+Name: com/horstmann/violet/framework/JNLPFileService.java
+SHA-256-Digest: itR+x5ca8ywTUYPXkbQyiN/ZjsQ8A6ft/nRl3wBnWro=
+
+Name: com/horstmann/violet/framework/EditorFrame$1.class
+SHA-256-Digest: 0Hdm1N+n+0lNBhTl+KZaR84/4nlHlXvVZIjYMqfPo9Y=
+
+Name: com/horstmann/violet/framework/Direction.class
+SHA-256-Digest: H8zBRB2kNcB7gedH1tzd7kYs6jqVDentEdURkYcra50=
+
+Name: com/horstmann/violet/framework/SerializableEnumeration$1.class
+SHA-256-Digest: inttMm1tv3QVYGDPRRPW1/mhdAvxWL/yIoOCkApQhE4=
+
+Name: com/horstmann/violet/SequenceDiagramGraph.java
+SHA-256-Digest: QIf6YRZf6jwZkagfEqF/LocpnyiEXasgGlTq1wvXuN4=
+
+Name: com/horstmann/violet/ClassNodeBeanInfo.java
+SHA-256-Digest: gpWNSLGFUS4dMAE1g+TH52GU6bSsWH6hFZqYMvIQGMQ=
+
+Name: com/horstmann/violet/framework/MultiLineString.java
+SHA-256-Digest: zJRePic1cpNU90B+ky9J4DJDqHJhpU47vAazgy+zOzA=
+
+Name: com/horstmann/violet/framework/PreferencesService.class
+SHA-256-Digest: dRQq482zUFNY1S5mWOF6TiIDD45VgSMmrxv+aGLThko=
+
+Name: com/horstmann/violet/framework/PrintDialog.class
+SHA-256-Digest: B+MOeKu915+fCOf7JuRJEPlWa5Nu1zQaeousDmi2RXs=
+
+Name: com/horstmann/violet/framework/SerializableEnumeration$2.class
+SHA-256-Digest: +B6pYZNNsIZM2OD5tF4zB1y+qfq2+3iZx0O3tfPD2Tk=
+
+Name: com/horstmann/violet/UMLEditor.java
+SHA-256-Digest: F5tltBj1CE0ELUGSzC3GNNQY6MGJ2rluy4OKDPJU+b0=
+
+Name: com/horstmann/violet/framework/PrintDialog$4.class
+SHA-256-Digest: p8DwpYV7YXzNQNJqt/2MPJzxa5Ji0QgW3eOhmdDg5xM=
+
+Name: com/horstmann/violet/LineStyle.java
+SHA-256-Digest: Ed9iFcF8Ka62ODF8ItTl7o+U6M6QbIROm+7bI29eXbM=
+
+Name: com/horstmann/violet/StateNode.class
+SHA-256-Digest: sWj0KbHt12W3P7sic0HT1/v+5EhyI6azNuuCfQAQt94=
+
+Name: com/horstmann/violet/PointNode.java
+SHA-256-Digest: xL9L0lOp0A0lEkyg0LfbMH5ihvtHc11Sy+FwFH5Kn2g=
+
+Name: com/horstmann/violet/framework/ResourceFactory.java
+SHA-256-Digest: dtPzOTjqptBxJ5oC+9BnBnDYiT25J0PGFjJWnTnrrjc=
+
+Name: com/horstmann/violet/StateDiagramGraph.class
+SHA-256-Digest: dzo8PkGwS6qIKZ/lu85kdMO0BcKFqh+ZxS38rmPpCII=
+
+Name: com/horstmann/violet/framework/ShapeEdge.java
+SHA-256-Digest: H8MhRy91ekJF7Z8rS31cmjTawoguWigGAwoScl/qGi4=
+
+Name: com/horstmann/violet/framework/EditorFrame$25.class
+SHA-256-Digest: cYObeFhopjSSiD6hUFONIFW9uxXMn/s91+5ugt/K5+Y=
+
+Name: com/horstmann/violet/framework/FileService$JFileChooserService$S
+ ave.class
+SHA-256-Digest: RGY+vR3FSXJp6YbeoujNN9iThEn+UvbtS41zNRzrDh0=
+
+Name: com/horstmann/violet/InterfaceNode.java
+SHA-256-Digest: HsuKZgRtYv/DWxfCNkfBdscPBp6yfrfI7KvINx+WTRw=
+
+Name: com/horstmann/violet/UseCaseDiagramGraph.java
+SHA-256-Digest: ZArIZzUTINSyFP/6jfA1k5SmYNxwE5k8rY+D/QPCxH0=
+
+Name: com/horstmann/violet/framework/ToolBar$2.class
+SHA-256-Digest: nvIZvoomZs5upIjk3Z4KMyzN+K1eCgZYBQTZR19JX5U=
+
+Name: com/horstmann/violet/ImplicitParameterNode.class
+SHA-256-Digest: xC2gXhNO/hhxNSd9q+vCd/gG65aTOqkIi2e345hCKbU=
+
+Name: com/horstmann/violet/framework/ColorEditor$ColorIcon.class
+SHA-256-Digest: edwi9IrKC189QrN1rj+I1n47JrdjyZAD2IL8AFZaC2g=
+
+Name: com/horstmann/violet/framework/MultiLineStringEditor.java
+SHA-256-Digest: iOX35EbkYufvpaBHDK6rMaaCJwIjrNaK2vduHVe/q3M=
+
+Name: com/horstmann/violet/framework/GraphPanel$1.class
+SHA-256-Digest: YdqcvizWMEim1hlS6dvBWqQSMZfaLVYkkOtG6/aHuHY=
+
+Name: com/horstmann/violet/framework/EditorStrings.properties
+SHA-256-Digest: H3LsGUqHEufLqBzTLHH/HrzLvuxZRYLijoP+jPLXois=
+
+Name: com/horstmann/violet/ClassRelationshipEdge.class
+SHA-256-Digest: nLMQSZFZmNDz73/Z67QJ+QdF3jltovQ8BwduXWL7D08=
+
+Name: com/horstmann/violet/framework/EditorFrame$18.class
+SHA-256-Digest: Wo2YA0DQIwalYYl7UBH9+46L6PvshU9x8mS3rRvjUtA=
+
+Name: com/horstmann/violet/framework/FormLayout.class
+SHA-256-Digest: tNPZi7tSEcKLW5w2J9M5UfWJCOPJrtw50Vf6punB6dE=
+
+Name: com/horstmann/violet/framework/JNLPPreferencesService.java
+SHA-256-Digest: Zk52uGp5t0yfjxxvMr6C6dfauN31CJ7EPYSaVo/R85E=
+
+Name: com/horstmann/violet/framework/GraphPanel$4.class
+SHA-256-Digest: nTiTNjWws6GaRTxS/f7xsGTgKUhyb1TqnU55wR4ftQw=
+
+Name: com/horstmann/violet/framework/EditorFrame$4.class
+SHA-256-Digest: QlpI/dyg6eC2A6ep36yKhXa4j2Zj0yHcaKFKPiivakM=
+
+Name: com/horstmann/violet/framework/EditorFrame$7.class
+SHA-256-Digest: T6kSiP49UouOG05SfjKmH/fyZ7CWAC41kEAiOA3qyao=
+
+Name: com/horstmann/violet/BentStyle.java
+SHA-256-Digest: CbZ7A1E7uB6l7tcAXa/9+DgpROG1vUOvM5yMq9b9WAw=
+
+Name: com/horstmann/violet/framework/PropertySheet$2.class
+SHA-256-Digest: tiNdrLAQioYh1uejsn6C2BNR1RWMFFQkNw1Fvo81m/E=
+
+Name: com/horstmann/violet/UMLEditor.class
+SHA-256-Digest: bEdpbxsI0B/Jmqlgk9pv6ClOk5ttAIbTOoyYc2ZvHpE=
+
+Name: com/horstmann/violet/framework/PrintDialog$5.class
+SHA-256-Digest: cJuaSttxz2yDWukniFlSb8PUxDQL1DokvQqN68/Rw4k=
+
+Name: com/horstmann/violet/framework/violet.jpg
+SHA-256-Digest: f/CdgA2Pe7VeFyG4UOD5VVOR0VZWg57KSegkL3PJdq8=
+
+Name: com/horstmann/violet/framework/PropertySelector.class
+SHA-256-Digest: j/11yWaqtphJI/br6Q2AsmGPoet7GG2XrCVDXKWAAA8=
+
+Name: com/horstmann/violet/framework/GraphPanel$3.class
+SHA-256-Digest: Q6g6X54fKR7cboK3ZhXsEfB/7D3KhaH8/cGj3MEqlFU=
+
+Name: com/horstmann/violet/ArrowHeadEditor.java
+SHA-256-Digest: r9Wux8Cdc5BI32o8AR7GN1++klehEZubIW3Xcoszc7M=
+
+Name: com/horstmann/violet/framework/PropertySheet$3.class
+SHA-256-Digest: uN940MzIJ2Lcz4qQ/h6Zi0VBNmLT0g8ggCQ65s8U7Uk=
+
+Name: com/horstmann/violet/NoteNode.java
+SHA-256-Digest: +4yDOA2gppXkT2tcRvA3QV2r7ar79ooybluYKowRONg=
+
+Name: com/horstmann/violet/framework/Grid.java
+SHA-256-Digest: /6JFkPzk55o/ZkAdn3b24dPfbALVtSOa67mzanzYf5o=
+
+Name: com/horstmann/violet/InterfaceNodeBeanInfo.class
+SHA-256-Digest: xszgkHy+Jzm1QKKaP5P3pxOkxGhVSPX/nqJSsaaVUCE=
+
+Name: com/horstmann/violet/framework/FileService$JFileChooserService.c
+ lass
+SHA-256-Digest: /lUQmcGhA5qIMoB3Nm0blsypAg+wBxhk0VqNIRt0jxE=
+
+Name: com/horstmann/violet/framework/ToolBar$1.class
+SHA-256-Digest: Jj9UOGd3U1YnVe+7TM2ibTQhhbZl+uQY7I5DaL4dHmM=
+
+Name: com/horstmann/violet/PackageNode.java
+SHA-256-Digest: r/vyt66bFt/4oGxaDrPNa7EvqH2ht7vdoVzHdrwOBMA=
+
+Name: com/horstmann/violet/framework/ColorEditor$1.class
+SHA-256-Digest: Fhkqxg9/YgJtaEbd/iffMszDiI5onb82W/ryOFbnQfU=
+
+Name: com/horstmann/violet/framework/Graph$1.class
+SHA-256-Digest: gg5bqL/JJcQmUbIKv/WkKIlL/LzKFCXi8UnvhNeLOAw=
+
+Name: com/horstmann/violet/framework/PropertySheet$4.class
+SHA-256-Digest: UrEtREtfM2uvSGG33pwPWtRGBp5/2wm8AVRvgNYLYQA=
+
+Name: com/horstmann/violet/PackageNode.class
+SHA-256-Digest: wCEMxgrzGDE8gZfOXFl1pDq3JulzYywojNMLkHr/JMw=
+
+Name: com/horstmann/violet/framework/EditorFrame$26.class
+SHA-256-Digest: +wnyTXrdVDpQbPDxPjaGtAgQrq8UKvwhsxkVXUPaD/U=
+
+Name: com/horstmann/violet/framework/PrintDialog$7.class
+SHA-256-Digest: 1lHCgXsLAQkT1f51ku/OKtgnAvlSEBxmUiSIAHB9QV4=
+
+Name: com/horstmann/violet/BentStyle.class
+SHA-256-Digest: EPGgmAEfIl8DPKXRaj56jUpVJ4fkDWrArlU0snLw80s=
+
+Name: com/horstmann/violet/StateTransitionEdge.class
+SHA-256-Digest: VshwPUy7G6vUfUdLRlufVtNTMApFX000FBniayekhVw=
+
+Name: com/horstmann/violet/ObjectDiagramGraph.class
+SHA-256-Digest: NKoI3pdqybAguUPc8POdANDMqVDnkpwANP4yFss6dgE=
+
+Name: com/horstmann/violet/StateDiagramGraphStrings.properties
+SHA-256-Digest: m8fi8rg1OoCbdLwGdEltScCkQz/9T1fhAmbzBUyMmmg=
+
+Name: com/horstmann/violet/framework/EditorFrame$5.class
+SHA-256-Digest: e8udi3CRBoJPJR7in0PNwiDqbOKXklKWgqDGjwpVxFM=
+
+Name: com/horstmann/violet/framework/Node.java
+SHA-256-Digest: Zhk9YLc4v8t5LVivt6hv46V+RtMe24FxF4frMgfDzz4=
+
+Name: com/horstmann/violet/ClassRelationshipEdge.java
+SHA-256-Digest: nRa+UCGYuxgh+Dj7T0gGLQwlquMU05ViL38oEZDl2ro=
+
+Name: com/horstmann/violet/StateTransitionEdge.java
+SHA-256-Digest: fNgfq/IhJ6ufXPJ5pxwQCuPnrgjKl8QyE1QArT9nXEE=
+
+Name: com/horstmann/violet/framework/GraphPanel$2.class
+SHA-256-Digest: DGFZ2lPoYvnQDXwCVlIbavtWFgIqnNswMH+q+GMxkb0=
+
+Name: com/horstmann/violet/ArrowHeadEditor.class
+SHA-256-Digest: CtQXzoB6g9qdqOm8/GW4LRfwFiXBj00j4Ayym3RRMOc=
+
+Name: build.xml
+SHA-256-Digest: m/QEFAuORNc8Y74lReqj4LzRGbpvEEV4VguRzdSeITw=
+
+Name: com/horstmann/violet/framework/license.txt
+SHA-256-Digest: IE2O/5L5WqxN9sgSK8FQX0aPOpAeWkzAiUDg7eGTiZQ=
+
+Name: com/horstmann/violet/framework/Graph.class
+SHA-256-Digest: cH0yY6NUI4c7MWSRmrZBRaI6E1O1TJ+xub1Ymk8XODw=
+
+Name: com/horstmann/violet/framework/PrintDialog$6.class
+SHA-256-Digest: tEl+CyfdWQgioTY/jpDFz72FGAoaWp+mijqb+59TxXw=
+
+Name: com/horstmann/violet/UseCaseDiagramGraphStrings.properties
+SHA-256-Digest: BhOC9QqEG2mGSK8CyrmhB5OKAIE9z5mI25lZx5cIhjM=
+
+Name: com/horstmann/violet/framework/EditorFrame$3.class
+SHA-256-Digest: qQdIySdVuXINppFuC2Ej+Em3qK5DDBHwLoVt5/THWgs=
+
+Name: com/horstmann/violet/framework/ColorEditor$ColorComparator.class
+SHA-256-Digest: EbtMMXofhb/bFSmD5tsCPoaxJhSJ/bIsjS2XfVexAII=
+
+Name: com/horstmann/violet/NoteEdge.class
+SHA-256-Digest: tA08yL9vRn42ZIawDhp+aKUN+Uj12cGJqyvGlHBuwds=
+
+Name: com/horstmann/violet/framework/PropertySheet$1.class
+SHA-256-Digest: Odo4fvc2X6hRE52LWMTlPz0vKRHDLPXDAJ93gtalDcc=
+
+Name: build.properties
+SHA-256-Digest: pKkiHt+E/oQk9uRE1lMJ2/1MwlGannsq+YnegtIlNx8=
+
+Name: com/horstmann/violet/framework/RectangularNode.class
+SHA-256-Digest: KzEoHDhgI9lKYoyTpwA3k1ABtBggmphycAKWeW7/M4c=
+
+Name: com/horstmann/violet/framework/small_violet.jpg
+SHA-256-Digest: 4QyBQUlxLNw98w7gawS4YTdmRKvsRKRIupq59Ykvxl8=
+
+Name: com/horstmann/violet/framework/VersionChecker.java
+SHA-256-Digest: 9mokjPdCWlYUxBe+cB2B5cCFudMX+Ifp/gLpF91cUR0=
+
+Name: com/horstmann/violet/framework/PreferencesService.java
+SHA-256-Digest: x0b0Wf/KC61/VntN0LnLXJV61ui2KeavI8RxOqXG1mk=
+
+Name: com/horstmann/violet/InterfaceNode.class
+SHA-256-Digest: 5DnN2NQHYFhlrIcSB/XXv1kqY14wmPprjQ2puqPVX/4=
+
+Name: com/horstmann/violet/framework/EditorFrame$16.class
+SHA-256-Digest: WUSa95y5NaFmQvrd4+krbAQQ5Z0NjMPvjotht9Mc8kY=
+
+Name: com/horstmann/violet/framework/SerializableEnumeration.java
+SHA-256-Digest: 5jZxmcSForn98JtVk5Q6Q1MbC1jNNgjLBGgd9fuP5u0=
+
+Name: com/horstmann/violet/framework/ColorEditor.class
+SHA-256-Digest: KXX2UW/Qhi84S9OFcAwQd0ixvu6XHgUVn5WteGeZFpQ=
+
+Name: com/horstmann/violet/StateNode.java
+SHA-256-Digest: 0MI6id0rHHBZB2ihoyqJeun2zxZuZyjDBHbFj4hnJeo=
+
+Name: com/horstmann/violet/ObjectDiagramGraph.java
+SHA-256-Digest: j3FzaTe2mzn1RXYfq0tYYYRcrcavCSsNS2OOYrVyFuo=
+
+Name: com/horstmann/violet/framework/ExtensionFilter.class
+SHA-256-Digest: bIlAhL9hhXBNjL0MgxgE/fO7ymQN/zNefOPoNbVCX90=
+
+Name: com/horstmann/violet/CircularStateNode.java
+SHA-256-Digest: BNR9hTeBTsWylmrSwDcJEEazbrobFUw7xmNUh9bk+o8=
+
+Name: com/horstmann/violet/framework/GraphPanel$1$1.class
+SHA-256-Digest: Za5q9hu9Y57OKGvvjfAPcClGOWUBz7/QME8L88HAEwM=
+
+Name: com/horstmann/violet/ArrowHead.java
+SHA-256-Digest: W66kva+/ReVVdENIlKtkNyhj9h7uSZKwpN1ds/+0ANE=
+
+Name: com/horstmann/violet/framework/JNLPFileService$2$1.class
+SHA-256-Digest: 8zPyZtSlzU9LOQONZEx8Gj/l4Xk+b3D9vUwgvMC0HBQ=
+
+Name: com/horstmann/violet/framework/EditorFrame$24.class
+SHA-256-Digest: Iyzm1brvRZ2gg1uwyx/By6C74xJ2TbLVj9d9S/m2koo=
+
+Name: com/horstmann/violet/ObjectNode.java
+SHA-256-Digest: motATs7stiWXqURHfsIR3Ewlbbe2CqyURML9synlMsI=
+
+Name: com/horstmann/violet/UMLEditorVersion.properties
+SHA-256-Digest: 2h3k8a3W16ncY9ivrL6j/zJzAOY17joEMadZmzjalgw=
+
+Name: com/horstmann/violet/ObjectReferenceEdge.class
+SHA-256-Digest: nujH2574QLX1l42I+15qvJGJ8+NFae2Zwu+crdFZhr8=
+
+Name: com/horstmann/violet/framework/ToolBar$4.class
+SHA-256-Digest: QxwJIVvCCt3DJwAlIlIFfjkScoy+SfHopGeXpsCsrFU=
+
+Name: com/horstmann/violet/ActorNode.class
+SHA-256-Digest: K7o5DyHieVH5P/pB96SyDuTG1X+8pc7p2uacxJW5lUk=
+
+Name: com/horstmann/violet/CallEdgeBeanInfo.class
+SHA-256-Digest: AnVinUT8Uu9HnrjAgdZU5MLz7Hf50VM8hBeUHXvog88=
+
+Name: com/horstmann/violet/framework/EditorFrame$17.class
+SHA-256-Digest: hP6SB0f2v3Sj/tj2tkTk1mO1PvLgxkko1XefSgPHBbE=
+
+Name: com/horstmann/violet/ClassRelationshipEdgeBeanInfo.class
+SHA-256-Digest: eOgFbliSY81J26l1Fi8x1EmQLvlUOhIa1e2icGe7Tqg=
+
+Name: com/horstmann/violet/framework/EditorFrame$8.class
+SHA-256-Digest: JNAZ7zjVL8BldxljeGY5hCCpM1aPtZ/YFqbRnkIkM4M=
+
+Name: com/horstmann/violet/ArrowHead.class
+SHA-256-Digest: SxSggYBXwUlk7TpfHu5IFjRpOC4S2RWevzAA5kO1B+Q=
+
+Name: com/horstmann/violet/framework/Node.class
+SHA-256-Digest: 5pva47dC06NSlxJxrsFLp2Or7DEtLZfNoM3vaprSds4=
+
+Name: com/horstmann/violet/UseCaseDiagramGraph.class
+SHA-256-Digest: Ysqiorsy3YPpgY9ZAK+zsXfs4H9uFTcRpXeZTxsiky0=
+
+Name: com/horstmann/violet/framework/EditorFrame$23.class
+SHA-256-Digest: waSmFdjbIjF9o3nS/4yxdDWSZhNdFhS85wQcORnPN28=
+
+Name: com/horstmann/violet/framework/EditorFrame.class
+SHA-256-Digest: 0R95jTJjiltt8QHtjxG8VHEuwwLsbVUw95ThOk9qBxs=
+
+Name: com/horstmann/violet/framework/ExtensionFilter.java
+SHA-256-Digest: /zOCplP/azp6Mwfexjm4HmSVFRNBLcJNBo5Axa5tMK4=
+
+Name: com/horstmann/violet/framework/FormLayout.java
+SHA-256-Digest: sKjbafVMDroG9WxB/Ytd48P8ZKdlDo3HzZLq7eAkMw4=
+
+Name: com/horstmann/violet/framework/MultiLineStringEditor$3.class
+SHA-256-Digest: 7d6UYXoAaJXeb9hi2vhw5HowRsuGUBx24T8LtPe40HY=
+
+Name: com/horstmann/violet/framework/ShapeEdge.class
+SHA-256-Digest: pnXJXJyLGkmHUalqBiX05Bnh4uSbrwZPUhhMCM2Rvyk=
+
+Name: com/horstmann/violet/framework/EditorFrame$10.class
+SHA-256-Digest: pDvsmGhKhe2Ern7z3e0XHxfVR/7TUGXMM5+i971LNhg=
+
+Name: com/horstmann/violet/framework/EditorFrame$2.class
+SHA-256-Digest: RJz9i/yRUnFejsRz/Q/H8KjNd5NcJ+R2fmcUFJuhzMM=
+
+Name: com/horstmann/violet/framework/EditorFrame$9.class
+SHA-256-Digest: VvfEz7287kTrxwrty+3Hpval5HNluKze60PR8xDLdpE=
+
+Name: com/horstmann/violet/framework/EditorFrame$11.class
+SHA-256-Digest: z9CuKdTVbKgs+D8cLeGKvwZEdrYBzUCpzMc/RHFkldY=
+
+Name: com/horstmann/violet/ClassNode.java
+SHA-256-Digest: U/Nc9Wp/QurQFzYXh3R1nHRD4wKw/jU1dyI9tJTuGzo=
+
+Name: com/horstmann/violet/StateDiagramGraph.java
+SHA-256-Digest: 55Kfyp45oSEu7Fsg43xSYDF7IRzDIIIuZkH1OtBVqDs=
+
+Name: com/horstmann/violet/FieldNode.java
+SHA-256-Digest: ARY7xgEJZcO/fpGFH7zUsVPv7E0lC/m4MyiAXQHgg00=
+
+Name: com/horstmann/violet/ActorNode.java
+SHA-256-Digest: PdwkfTyvXAAWX9FYghWROx8wa1/zN4A5gghphYyPEIs=
+
+Name: com/horstmann/violet/framework/FileService.java
+SHA-256-Digest: 6GWTh+K/R5cSvz78IkxuOnHpdLZD+EhMwjGXp//3gIE=
+
+Name: com/horstmann/violet/framework/ColorEditor.java
+SHA-256-Digest: MS7jEu44t/9EpQriMAFf7y/k7siPsVczt3KtrSy9VaI=
+
+Name: com/horstmann/violet/LineStyleEditor.class
+SHA-256-Digest: 01ZZeG+B5xpLGXw2Hs7me7FUqbyX8tKL5b2AugTA85I=
+
+Name: com/horstmann/violet/framework/ToolBar$3.class
+SHA-256-Digest: iBiesqLBik+Trte+Zi/2V2zeLCgRRjOwLRUKW5G1I2c=
+
+Name: com/horstmann/violet/UseCaseNode.java
+SHA-256-Digest: DgTRR4Dh7dgzCrzgsWHBNc200/paaHCEuVPuyvZUjeY=
+
+Name: com/horstmann/violet/framework/ToolBar.java
+SHA-256-Digest: bs4eabEC90uH52Tm3YeQ6xS9WiKkoojutbNrALXJKQQ=
+
+Name: com/horstmann/violet/framework/AbstractNode.java
+SHA-256-Digest: jqkL2s2ZvNlBzHx34AHYPjqkW7nReNeq2X9Q2wmjLog=
+
+Name: com/horstmann/violet/framework/FileService$JFileChooserService$O
+ pen.class
+SHA-256-Digest: jVTPEu+cktdZEfcS5GKSfB7jjbu0SGjXyeF7NKOsmgc=
+
+Name: com/horstmann/violet/framework/AbstractNode$1.class
+SHA-256-Digest: pCkKpOg/Yf4tJWVSD+m+21OtwHlGGNHdxxZ8RhKgBPo=
+
+Name: com/horstmann/violet/UMLEditorVersion.properties.template
+SHA-256-Digest: Ef3f+TEwlLSLV701NlR8ZK1NJod3eFPI0DTtePdosjU=
+
+Name: com/horstmann/violet/framework/SerializableEnumeration.class
+SHA-256-Digest: DiUXTMPNpzKtfO7wxf0LDXE9ajkfN4v+ao5mZG16cjE=
+
+Name: com/horstmann/violet/framework/EditorFrame$12.class
+SHA-256-Digest: TApNFWzCvAHhMGh/qPt9gIT7Um7D0JDrt/l3A/jUglk=
+
+Name: com/horstmann/violet/framework/EditorFrame$22.class
+SHA-256-Digest: MXb9swbTQWCraKwppY5V8+k3zeacIMBdb7r5DUCGyWE=
+
+Name: com/horstmann/violet/ClassDiagramGraphStrings.properties
+SHA-256-Digest: fHDy/Otu7eCplW64pvRYsVkkBcEnCo2uLoHexdCnmW0=
+
+Name: com/horstmann/violet/CallNodeBeanInfo.class
+SHA-256-Digest: Z0CLtdNorBX8wSFcbr0e6/Bs65MUFi95/Qcd7jzZAh4=
+
+Name: com/horstmann/violet/framework/EditorFrame$15.class
+SHA-256-Digest: N5XXA1n4qbonSwVLOeDG1Oa4cJBEmVsI1DbO49XksaY=
+
+Name: com/horstmann/violet/ReturnEdge.java
+SHA-256-Digest: NJkVO5NVtg7ocR1oonu/fv//SvVx9i8TVWX2recBCok=
+
+Name: com/horstmann/violet/UMLEditorStrings.properties
+SHA-256-Digest: qSg6EBtO1GkvevcTtEG9LXjKK58t3gsULcd5BO3uONM=
+
+Name: com/horstmann/violet/framework/ToolBar$5.class
+SHA-256-Digest: ylk1ch6nZSxEXWBEly6MQcbYPgBHZGyCDuVxW1/0QN0=
+
+Name: com/horstmann/violet/CircularStateNode.class
+SHA-256-Digest: wtcuvIWmSNKft1hevNswMW+LAjQamec5XRgifC+Eta8=
+
+Name: com/horstmann/violet/CallEdge.class
+SHA-256-Digest: MQCQfnJv435P98uPPkYWmWcphiFSZqZ4vLuyaYDOPeU=
+
+Name: com/horstmann/violet/framework/PrintDialog$2.class
+SHA-256-Digest: 46awikv/5JRZL1CS20/tKA8rPefapyRD4faFWPDOJtk=
+
+Name: com/horstmann/violet/SequenceDiagramGraph.class
+SHA-256-Digest: oHlTivqcmV85Dp4bMqTHuJFr8PaALDqAfk8rF9aYbTM=
+
+Name: com/horstmann/violet/framework/DefaultPreferencesService.class
+SHA-256-Digest: DDVP0rM8AphKtriHmSt/6ftannJkFf/RTcNvWnFTeSI=
+
+Name: com/horstmann/violet/ReturnEdge.class
+SHA-256-Digest: K1N5G/q1MPaibfkrOkjphOKAOh8oQCZkU0cfkQ5aJws=
+
+Name: com/horstmann/violet/framework/JNLPPreferencesService.class
+SHA-256-Digest: 4h3SMOGyMpu67jstA0nXnHYQkht/MAGjRZAZ/9Y9cVI=
+
+Name: com/horstmann/violet/NoteNode.class
+SHA-256-Digest: UzlgVY3/07ZJCZdgGiDRcti6ma9qbSvt3IzvNrLZb8I=
+
+Name: com/horstmann/violet/framework/PrintDialog.java
+SHA-256-Digest: 8etHp1NHs58u0kjP93v0azF+RVCgiksXG1J76vJPrbc=
+
+Name: com/horstmann/violet/framework/Edge.java
+SHA-256-Digest: srXDtEBp3hQxTitTGSo6rhvk1rV6RogE29K2DkqFjYM=
+
+Name: com/horstmann/violet/framework/GraphFrame.class
+SHA-256-Digest: E7AyfWX0ywJ7KCEd1nI1CNB56E6n/MFgWKqoWrcouzM=
+
+Name: com/horstmann/violet/framework/SegmentedLineEdge.java
+SHA-256-Digest: ud/G8CIh2Y4t5pXfounC4AL1t3Nt3LDfNTqHpuJtuqE=
+
+Name: com/horstmann/violet/framework/GraphFrame$1.class
+SHA-256-Digest: PFBRIy9DVpIHEx6hlOPK8tyrAz1GJ74NQ5zuAD86eJ4=
+
+Name: com/horstmann/violet/SequenceDiagramGraphStrings.properties
+SHA-256-Digest: D3lGoYqea/AsWQZuac4gA+y1aEU1s/ixSQfVYFyWUTU=
+
+Name: com/horstmann/violet/framework/NullPreferencesService.class
+SHA-256-Digest: /8iG6WWQlyllq/bdYpuX0qvx+DkJ+iLxt6ELCIqYlcM=
+
+Name: com/horstmann/violet/framework/EditorFrame$20.class
+SHA-256-Digest: 9pMSV4hLwHtdcv7zj77yTIYvJTzkgdMLcrOmJoNRLHU=
+
+Name: com/horstmann/violet/LineStyle.class
+SHA-256-Digest: 1Kth0+FtKO8PZjC6T8ACR89LhfRpuNos31rGrbGLoGo=
+
+Name: com/horstmann/violet/framework/PrintDialog$1.class
+SHA-256-Digest: J+1dH2G1eqYM5+t2IZDisMKYZOs6EVcum1aUnoh6tNc=
+
+Name: com/horstmann/violet/ObjectNode.class
+SHA-256-Digest: Zzv8f5FrGyi9puJa2pf7cdpPV/OjQPZvAZjcl8gvNsA=
+
+Name: com/horstmann/violet/UseCaseNode.class
+SHA-256-Digest: jtG6PfIBBLH0T0g4luW2wbRTNVU61xYIQzyYFtLHDE0=
+
+Name: com/horstmann/violet/framework/PropertySheet.java
+SHA-256-Digest: +oi8sD+asS/ph2Wf7PhQDOQOF7hjHLOA8PkfFHA86sY=
+
+Name: com/horstmann/violet/ImplicitParameterNode.java
+SHA-256-Digest: wixyRTyKoFlgppYwDoiKSAtSQ/+bf7KGZEGo5NPCbEI=
+
+Name: com/horstmann/violet/framework/Direction.java
+SHA-256-Digest: 2oXX4lIriAWO5QTbey5Nk1e7rceq14BhUyMacGBF85o=
+
+Name: com/horstmann/violet/framework/PrintDialog$PrintPreviewCanvas.cl
+ ass
+SHA-256-Digest: bJpEtrZbKIwo1kUJIG1wgy0eZAaDQ39bqy5sYcuKyt8=
+
+Name: com/horstmann/violet/framework/PropertySheet.class
+SHA-256-Digest: WM9v68eAwO0006+8h3zR0eILGaCytJjTirhcko6Uvz4=
+
+Name: com/horstmann/violet/framework/MultiLineStringEditor.class
+SHA-256-Digest: 7Blbpn/M96XuIcRPhugCoPXrAr/UYJ9R3PYltb2wMJk=
+
+Name: com/horstmann/violet/BentStyleEditor.class
+SHA-256-Digest: qd2/Nl3Zb8Cg1+LGJsf/FCLzz4h6FYMRj/6TG5wS270=
+
+Name: com/horstmann/violet/framework/PropertySelector.java
+SHA-256-Digest: M5f75MQ62+Zc9aBZzJg8jkmsu9woGPYPd59+M3xOux0=
+
+Name: com/horstmann/violet/framework/EditorFrame$13.class
+SHA-256-Digest: 64jGF71rhVzbENHgN740NYkfN7uvfoRqcow3iynhdxU=
+
+Name: com/horstmann/violet/framework/PropertySheet$StringEditor.class
+SHA-256-Digest: MbbpgofWkmaWtGz+MPK5cxtKSVfl6EDH3L0WyQjbugo=
+
+Name: com/horstmann/violet/InterfaceNodeBeanInfo.java
+SHA-256-Digest: yQ8Ox2luPmWQPALRHgM7neI065LsBgmNsFk/g4Ydd90=
+
+Name: com/horstmann/violet/framework/EditorFrame.java
+SHA-256-Digest: +dlz68vBIqu7EKwm4U9fk5V7uzPi+/u80MM94E/PW18=
+
+Name: com/horstmann/violet/BentStyleEditor.java
+SHA-256-Digest: VTti36vJwgY0g/ZPMI+nkagUy4LEowMvDTrfJAlMdAs=
+
+Name: com/horstmann/violet/framework/GraphPanel.class
+SHA-256-Digest: fNjIOA2u65du0k7o3FX4gCWtT+TjaTqNwikwcCMqZUk=
+
+Name: com/horstmann/violet/framework/GraphPanel.java
+SHA-256-Digest: hK612UNoQ6I+jKVhKxSxJTaE4ih2f6wEUN6LunDy978=
+
+Name: com/horstmann/violet/framework/MultiLineString.class
+SHA-256-Digest: OnhrgIWE/dhvNGako1UgBuMtiV9CMvcPMBMzEZAwtWE=
+
+Name: com/horstmann/violet/framework/ToolBar.class
+SHA-256-Digest: hqnrvbgzUD23ypwldvOmfqO3neQPZU067tlUllPSNuw=
+
+Name: com/horstmann/violet/framework/Edge.class
+SHA-256-Digest: R6NNYe1wV32kecF1QjqvxLXDaI6fURKpKIN7+/BBhAk=
+
+Name: com/horstmann/violet/framework/AbstractNode.class
+SHA-256-Digest: StRqjHXse7QG0ZnQ8aT0fjbvbs722cJBMeLNMgNzKQU=
+
+Name: com/horstmann/violet/framework/EditorFrame$14.class
+SHA-256-Digest: T9AlgOe+yM0rWmQpB6o3Ta6E4PAWNOvcmH6nJ80fnkQ=
+
+Name: com/horstmann/violet/framework/Grid.class
+SHA-256-Digest: M42RR60kf5A60YXPZKi1v+twBMGAg4H1KLKQxraDxLs=
+

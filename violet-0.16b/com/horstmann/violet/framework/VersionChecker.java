@@ -39,8 +39,6 @@ public class VersionChecker
    public void check(String desiredVersion)
    {
       String actualVersion = System.getProperty("java.version");
-      actualVersion = actualVersion.replaceAll("-[a-zA-Z0-9]+", "");
-      // http://openjdk.java.net/jeps/223
       boolean versionOk;
       try
       {
