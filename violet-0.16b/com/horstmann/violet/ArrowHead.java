@@ -45,7 +45,7 @@ public class ArrowHead extends SerializableEnumeration
       GeneralPath path = getPath(p, q);
       Color oldColor = g2.getColor();
       if (this == BLACK_DIAMOND || this == BLACK_TRIANGLE)
-         g2.setColor(Color.BLACK);
+         g2.setColor(Color.BLUE);
       else
          g2.setColor(Color.WHITE);
       g2.fill(path);
