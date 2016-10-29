@@ -1,0 +1,20 @@
+Week 1
+
+Reports for all team members: No
+
+Craig - no total hours
+Yuliang - no report
+
+Wiki doc with features: No
+
+Which diagram types will you support?
+
+Issues: No
+
+"Implement the undo" isn't an issue that one person can do in <= 3 days.
+
+Code and build script: Ok
+
+Weird not to have the build script in the root directory. What is the use of the 
+violet-0.16b directory? It won't be 0.16b for very long.
+
