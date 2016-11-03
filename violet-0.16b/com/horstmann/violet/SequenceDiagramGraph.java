@@ -32,6 +32,7 @@ import com.horstmann.violet.framework.Graph;
 import com.horstmann.violet.framework.Grid;
 import com.horstmann.violet.framework.Node;
 
+import java.util.Queue;
 
 /**
    A UML sequence diagram.
@@ -103,7 +104,7 @@ public class SequenceDiagramGraph extends Graph
       }
 
       double left = 0;
-
+      private static Queue<E> = new Queue<E>;
       // find the max of the heights of the objects
 
       double top = 0;
@@ -208,11 +209,14 @@ public class SequenceDiagramGraph extends Graph
    public Edge[] getEdgePrototypes()
    {
       return EDGE_PROTOTYPES;
+      
    }
 
    private static final Node[] NODE_PROTOTYPES = new Node[3];
 
    private static final Edge[] EDGE_PROTOTYPES = new Edge[3];
+   
+  
 
    static
    {
@@ -224,8 +228,3 @@ public class SequenceDiagramGraph extends Graph
       EDGE_PROTOTYPES[2] = new NoteEdge();
    }
 }
-
-
-
-
-
