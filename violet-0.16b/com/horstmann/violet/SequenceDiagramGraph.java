@@ -104,7 +104,7 @@ public class SequenceDiagramGraph extends Graph
       }
 
       double left = 0;
-      private static Queue<E> = new Queue<E>;
+
       // find the max of the heights of the objects
 
       double top = 0;
@@ -199,6 +199,8 @@ public class SequenceDiagramGraph extends Graph
          Edge e = (Edge) iter.next();
          e.draw(g2);
       }
+      undoTracker.addAll(nodes);
+      undoTracker.addAll(edges);
    }
 
    public Node[] getNodePrototypes()
@@ -216,7 +218,7 @@ public class SequenceDiagramGraph extends Graph
 
    private static final Edge[] EDGE_PROTOTYPES = new Edge[3];
    
-  
+   private static Queue undoTracker = new Queue();
 
    static
    {
