@@ -155,6 +155,8 @@ public class EditorFrame extends JFrame
       
       JMenuBar menuBar = new JMenuBar();
       setJMenuBar(menuBar);
+      
+      
       JMenu fileMenu = factory.createMenu("file");
       menuBar.add(fileMenu);
 
@@ -219,6 +221,26 @@ public class EditorFrame extends JFrame
                panel.editSelected();
             }
          }));
+      
+      editMenu.add(factory.createMenuItem(
+            "edit.redo", new
+            ActionListener()
+            {
+               public void actionPerformed(ActionEvent event)
+               {
+                  
+               }
+            }));
+      editMenu.add(factory.createMenuItem(
+            "edit.undo", new
+            ActionListener()
+            {
+               public void actionPerformed(ActionEvent event)
+               {
+                  
+               }
+            }));
+      
 
       editMenu.add(factory.createMenuItem("edit.delete", new
          ActionListener()
