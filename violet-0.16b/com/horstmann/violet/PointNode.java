@@ -71,4 +71,13 @@ public class PointNode extends AbstractNode
    }
 
    private Point2D point;
+
+   @Override
+   public double[] location()
+   {
+      double[] a = new double[2];
+      a[0] = point.getX();
+      a[1] = point.getY();
+      return a;
+   }
 }
