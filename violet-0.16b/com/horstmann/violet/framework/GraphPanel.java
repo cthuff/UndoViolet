@@ -44,6 +44,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.ResourceBundle;
 import java.util.Set;
+import java.util.Stack;
 
 /**
  * A panel to draw a graph
@@ -316,7 +317,49 @@ public class GraphPanel extends JPanel
       if (selectedItems.size() > 0) setModified(true);
       repaint();
    }
-
+   
+   /**
+    * method to save the current node or edge into stack and remove it from panel
+    */
+   public void saveUndo() 
+   {
+      Iterator iter = selectedItems.iterator();
+      if(iter.hasNext()) 
+      {
+         Object selected = iter.next();
+         undo.push(selected);
+         if (selected instanceof Node)
+         {
+            graph.removeNode((Node) selected);
+         }
+         else if (selected instanceof Edge)
+         {
+            graph.removeEdge((Edge) selected);
+         }
+      }
+      if (selectedItems.size() > 0) setModified(true);
+      repaint();      
+      selectNext(1);
+   }
+   
+   public void redo() 
+   {      
+      Node current = null;
+      Object selected = undo.pop();
+      if (selected instanceof Node)
+      {
+         current = (Node) selected;
+      }
+      else if (selected instanceof Edge)
+      {
+         graph.removeEdge((Edge) selected);
+      }
+      double[] a = current.location();
+      Point2D.Double location = new Point2D.Double(a[0],a[1]); 
+      graph.add(current, location);
+      repaint();
+      
+   }
    /**
     * Set the graph in the panel
     * @param aGraph the graph to be displayed and edited
@@ -621,4 +664,7 @@ public class GraphPanel extends JPanel
    private static final int CONNECT_THRESHOLD = 8;
 
    private static final Color PURPLE = new Color(0.7f, 0.4f, 0.7f);
+   
+   
+   private Stack undo = new Stack();
 }

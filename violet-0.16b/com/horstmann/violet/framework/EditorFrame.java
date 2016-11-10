@@ -55,6 +55,7 @@ import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.ResourceBundle;
+import java.util.Stack;
 
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
@@ -85,6 +86,7 @@ import com.horstmann.violet.LineStyle;
 */
 public class EditorFrame extends JFrame
 {
+   
    /**
       Constructs a blank frame with a desktop pane
       but no graph windows.
@@ -228,7 +230,11 @@ public class EditorFrame extends JFrame
             {
                public void actionPerformed(ActionEvent event)
                {
-                  
+                  GraphFrame frame 
+                  = (GraphFrame)desktop.getSelectedFrame();
+               if (frame == null) return;
+               GraphPanel panel = frame.getGraphPanel();              
+               panel.redo();
                }
             }));
       editMenu.add(factory.createMenuItem(
@@ -237,7 +243,11 @@ public class EditorFrame extends JFrame
             {
                public void actionPerformed(ActionEvent event)
                {
-                  
+                  GraphFrame frame 
+                  = (GraphFrame)desktop.getSelectedFrame();
+               if (frame == null) return;
+               GraphPanel panel = frame.getGraphPanel();              
+               panel.saveUndo();;
                }
             }));
       
@@ -1161,7 +1171,7 @@ public class EditorFrame extends JFrame
    private static final int ESTIMATED_FRAMES = 5;
    private static final int DEFAULT_MAX_RECENT_FILES = 5;
    private static final double GROW_SCALE_FACTOR = Math.sqrt(2);
-
+   
    private static PersistenceDelegate staticFieldDelegate 
       = new 
          DefaultPersistenceDelegate()

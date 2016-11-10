@@ -32,6 +32,8 @@ import java.util.List;
 */
 public interface Node extends Serializable, Cloneable
 {
+   double[] location();
+   
    /**
       Draw the node.
       @param g2 the graphics context

@@ -41,7 +41,13 @@ public abstract class RectangularNode extends AbstractNode
       cloned.bounds = (Rectangle2D)bounds.clone();
       return cloned;
    }
-
+   
+   public double[] location(){
+      double a[] = new double[2];
+      a[0] = bounds.getX();
+      a[1] = bounds.getY();
+      return a;
+   }
    public void translate(double dx, double dy)
    {
       bounds.setFrame(bounds.getX() + dx,
