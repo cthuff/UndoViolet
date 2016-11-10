@@ -13,23 +13,23 @@ public class UndoManager
 {
     public UndoManager(Stack<UndoableEdit> editable)
     {
-         this.edits = editable;
+        this.edits = editable;
     }
-    
+
     public void add(UndoableEdit e)
     {
         edits.add(e);
     }
-    
+
     public void undo()
     {
-        
+
     }
-    
+
     public void redo()
     {
-        
+
     }
-    
+
     private Stack<UndoableEdit> edits;
 }
