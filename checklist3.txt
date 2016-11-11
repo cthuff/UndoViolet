@@ -1,0 +1,23 @@
+
+Week 3
+
+Functional specification (what the project will do) is complete: Ok
+
+There is some design documentation (key classes, mechanisms, protocols): Ok
+
+Work on that more next week.
+
+There are sufficient issues to keep each team member busy for week 4: Partial
+
+An issue should be assigned to a SINGLE PERSON and have a SHORT DURATION (< 3 days). You have unassigned issues.
+
+I like the "Commit to the project" issue. Make one for Yuliang as well. If those aren't closed, it's clear who isn't doing anything.
+
+Each team member has closed at least two issues and has put the closed issue number(s) in their report: No
+
+No closed issues reported by Hengyi
+Nothing at all from Yuliang and Qi. 
+
+The project builds and does something useful. Put instructions for building and for trying out that useful feature on the wiki: No
+
+I didn't see anything on the Wiki.
