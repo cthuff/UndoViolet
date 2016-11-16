@@ -4,7 +4,7 @@
    <property name="srcdir" value="${basedir}" />
    <property name="classdir" value="${basedir}" />
    <property name="jnlpfile" value="violet.jnlp" />
-   <property name="version.properties" value="/violet/UMLEditorVersion.properties" />
+   <property name="version.properties" value="com/horstmann/violet/UMLEditorVersion.properties" />
    
    <path id="classpath">
       <pathelement location="${srcdir}" />

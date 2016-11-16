@@ -30,18 +30,5 @@ public class UndoManager
         edits.add(e);
     }
 
-    /**
-     * When the undo button is clicked 
-     */
-    public void undo()
-    {
-
-    }
-
-    public void redo()
-    {
-
-    }
-
     private Stack<UndoableEdit> edits;
 }

@@ -13,6 +13,11 @@ public class UndoableEdit
      * 
      * @param e the edge that was added to the UML Diagram
      */
+    public UndoableEdit()
+    {
+        
+    }
+    
     public UndoableEdit(Edge e)
     {
         this.edge = e;
