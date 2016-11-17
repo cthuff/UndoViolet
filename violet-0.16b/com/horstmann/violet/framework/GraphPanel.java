@@ -1,5 +1,5 @@
 /*
- Violet - A program for editing UML diagrams.
+ƒ Violet - A program for editing UML diagrams.
 
  Copyright (C) 2002 Cay S. Horstmann (http://horstmann.com)
 
@@ -39,6 +39,9 @@ import javax.swing.JOptionPane;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
+import com.horstmann.violet.AddCommand;
+import com.horstmann.violet.DeleteCommand;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -51,6 +54,7 @@ import java.util.Stack;
  */
 public class GraphPanel extends JPanel
 {
+
    /**
     * Constructs a graph.
     * @param aToolBar the tool bar with the node and edge tools
@@ -76,6 +80,7 @@ public class GraphPanel extends JPanel
             boolean isCtrl = (event.getModifiersEx() & InputEvent.CTRL_DOWN_MASK) != 0; 
             Node n = graph.findNode(mousePoint);
             Edge e = graph.findEdge(mousePoint);
+
             Object tool = toolBar.getSelectedTool();
             if (event.getClickCount() > 1
                   || (event.getModifiers() & InputEvent.BUTTON1_MASK) == 0)
@@ -103,11 +108,15 @@ public class GraphPanel extends JPanel
                               {
                                  Node prototype = (Node) tool;
                                  Node newNode = (Node) prototype.clone();
-                                 boolean added = graph.add(newNode, mousePoint);
+                                 command  =  new AddCommand(graph, newNode, mousePoint);
+                                 boolean added = command.Execute();
+                                 commandManager.ExecuteCommand(command);
+                                 //boolean added = graph.add(newNode, mousePoint);
                                  if (added)
                                  {
                                     setModified(true);
                                     setSelectedItem(newNode);
+
                                  }
                               }
                            }
@@ -122,8 +131,9 @@ public class GraphPanel extends JPanel
                }
                else if (n != null)
                {
-                  if (isCtrl)
+                  if (isCtrl){
                      addSelectedItem(n);
+                  }
                   else if (!selectedItems.contains(n))
                      setSelectedItem(n);
                   dragMode = DRAG_MOVE;
@@ -139,7 +149,10 @@ public class GraphPanel extends JPanel
             {
                Node prototype = (Node) tool;
                Node newNode = (Node) prototype.clone();
-               boolean added = graph.add(newNode, mousePoint);
+               command  =  new AddCommand(graph, newNode, mousePoint);
+               boolean added = command.Execute();
+               commandManager.ExecuteCommand(command);
+               //boolean added = graph.add(newNode, mousePoint);
                if (added)
                {
                   setModified(true);
@@ -174,9 +187,12 @@ public class GraphPanel extends JPanel
             {
                Edge prototype = (Edge) tool;
                Edge newEdge = (Edge) prototype.clone();
+               
+               command = new AddCommand(graph,newEdge, mouseDownPoint, mousePoint);
                if (mousePoint.distance(mouseDownPoint) > CONNECT_THRESHOLD
-                     && graph.connect(newEdge, mouseDownPoint, mousePoint))
+                     && command.Execute())
                {
+                  commandManager.ExecuteCommand(command);
                   setModified(true);
                   setSelectedItem(newEdge);
                }
@@ -301,19 +317,8 @@ public class GraphPanel extends JPanel
     */
    public void removeSelected()
    {
-      Iterator iter = selectedItems.iterator();
-      while (iter.hasNext())
-      {
-         Object selected = iter.next();                 
-         if (selected instanceof Node)
-         {
-            graph.removeNode((Node) selected);
-         }
-         else if (selected instanceof Edge)
-         {
-            graph.removeEdge((Edge) selected);
-         }
-      }
+      command  = new DeleteCommand(graph,selectedItems);
+      commandManager.ExecuteCommand(command);
       if (selectedItems.size() > 0) setModified(true);
       repaint();
    }
@@ -341,7 +346,7 @@ public class GraphPanel extends JPanel
       repaint();      
       selectNext(1);
    }
-   
+
    public void redo() 
    {      
       Node current = null;
@@ -637,6 +642,12 @@ public class GraphPanel extends JPanel
       return hideGrid;
    }
 
+   
+   public CommandManager getManager() {
+       return this.commandManager;
+   }
+   
+   
    private Graph graph;
    private Grid grid;
    private GraphFrame frame;
@@ -665,6 +676,7 @@ public class GraphPanel extends JPanel
 
    private static final Color PURPLE = new Color(0.7f, 0.4f, 0.7f);
    
-   
+   private ICommand command;
+   private CommandManager commandManager = new CommandManager();
    private Stack undo = new Stack();
 }

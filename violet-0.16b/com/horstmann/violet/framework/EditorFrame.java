@@ -224,7 +224,7 @@ public class EditorFrame extends JFrame
             }
          }));
       
-      editMenu.add(factory.createMenuItem(
+      editMenu.add(factory.createMenuItem(                     // add a redo operation in the edit menu
             "edit.redo", new
             ActionListener()
             {
@@ -233,11 +233,13 @@ public class EditorFrame extends JFrame
                   GraphFrame frame 
                   = (GraphFrame)desktop.getSelectedFrame();
                if (frame == null) return;
-               GraphPanel panel = frame.getGraphPanel();              
-               panel.redo();
+               GraphPanel panel = frame.getGraphPanel();   
+               panel.getManager().Redo();
+               panel.repaint();
+               //panel.redo();
                }
             }));
-      editMenu.add(factory.createMenuItem(
+      editMenu.add(factory.createMenuItem(                  //add a undo operation in the edit menu
             "edit.undo", new
             ActionListener()
             {
@@ -247,7 +249,9 @@ public class EditorFrame extends JFrame
                   = (GraphFrame)desktop.getSelectedFrame();
                if (frame == null) return;
                GraphPanel panel = frame.getGraphPanel();              
-               panel.saveUndo();;
+               panel.getManager().Undo();
+               panel.repaint();
+               //  panel.saveUndo();;
                }
             }));
       
@@ -262,6 +266,7 @@ public class EditorFrame extends JFrame
                if (frame == null) return;
                GraphPanel panel = frame.getGraphPanel();
                panel.removeSelected();
+               panel.repaint();
             }
          }));
 
