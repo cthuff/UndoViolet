@@ -1,0 +1,22 @@
+Design documentation lists all planned classes: No
+
+You need design documentation! This is a class on OO design.
+
+There are sufficient issues to keep each team member busy: Ok
+
+Should #4 be closed?
+
+The project builds and does something significant: No
+
+I get compiler errors when I run ant compile
+
+Every team member has multiple commits throughout the week: No
+
+There need to be multiple commits by everyone!
+
+Individual reports: 
+
+No report by Qi
+No issues closed by Hengyi
+
+You all need to spend more time on this project if you want it to succeed.
