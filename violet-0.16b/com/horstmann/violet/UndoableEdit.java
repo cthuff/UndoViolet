@@ -1,3 +1,5 @@
+package com.horstmann.violet;
+
 /**
  * Creates an UndoableEdit, which consists of an Edge or a Node. The purpose is
  * for the UndoManager to keep track of which actions were drawn by the user and

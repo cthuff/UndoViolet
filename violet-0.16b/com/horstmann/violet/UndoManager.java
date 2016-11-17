@@ -1,3 +1,5 @@
+package com.horstmann.violet;
+
 import java.util.Stack;
 
 import javax.swing.undo.UndoableEdit;

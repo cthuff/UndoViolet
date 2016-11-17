@@ -328,27 +328,48 @@ public class GraphPanel extends JPanel
     */
    public void saveUndo() 
    {
-      Iterator iter = selectedItems.iterator();
-      if(iter.hasNext()) 
+      if(delet.isEmpty())
       {
-         Object selected = iter.next();
-         undo.push(selected);
+         Iterator iter = selectedItems.iterator();
+         if(iter.hasNext()) 
+         {
+            Object selected = iter.next();
+            undo.push(selected);
+            if (selected instanceof Node)
+            {
+               graph.removeNode((Node) selected);
+            }
+            else if (selected instanceof Edge)
+            {
+               graph.removeEdge((Edge) selected);
+            }
+         }
+      }
+      else
+      {
+         Node current = null;
+         Object selected = delet.pop();
          if (selected instanceof Node)
          {
-            graph.removeNode((Node) selected);
+            current = (Node) selected;
          }
          else if (selected instanceof Edge)
          {
             graph.removeEdge((Edge) selected);
          }
+         double[] a = current.location();
+         Point2D.Double location = new Point2D.Double(a[0],a[1]); 
+         graph.add(current, location);
       }
       if (selectedItems.size() > 0) setModified(true);
       repaint();      
       selectNext(1);
+      
    }
 
    public void redo() 
    {      
+      if(undo.isEmpty())return;
       Node current = null;
       Object selected = undo.pop();
       if (selected instanceof Node)
@@ -607,6 +628,7 @@ public class GraphPanel extends JPanel
    {
       if (obj == lastSelected)
          lastSelected = null;
+      delet.push(lastSelected);
       selectedItems.remove(obj);
    }
    
@@ -679,4 +701,5 @@ public class GraphPanel extends JPanel
    private ICommand command;
    private CommandManager commandManager = new CommandManager();
    private Stack undo = new Stack();
+   private Stack delet = new Stack();
 }
