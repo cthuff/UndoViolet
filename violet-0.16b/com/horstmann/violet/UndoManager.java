@@ -11,12 +11,13 @@ import javax.swing.undo.UndoableEdit;
  */
 public class UndoManager
 {
-    /**
+    /*
+   /**
      * Constructs an UndoableEdit Stack
      * 
      * @param editable Stack to be initialized
      */
-    public UndoManager(Stack<UndoableEdit> editable)
+    /* public UndoManager(Stack<UndoableEdit> editable)
     {
         this.edits = editable;
     }
@@ -25,10 +26,12 @@ public class UndoManager
      * Adds the newest edit to the stack
      * @param e the edit to be added to the Stack
      */
-    public void add(UndoableEdit e)
+    /* public void add(UndoableEdit e)
     {
         edits.add(e);
     }
 
-    private Stack<UndoableEdit> edits;
+   / private Stack<UndoableEdit> edits;
+    */
+
 }
