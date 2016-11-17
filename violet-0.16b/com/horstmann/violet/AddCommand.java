@@ -27,7 +27,7 @@ public class AddCommand implements ICommand{
         
     }
     
-    @Override
+   // @Override
     public boolean Execute() { 
         if(isNode) {
             graph.add(node, point);
@@ -40,7 +40,7 @@ public class AddCommand implements ICommand{
         return true;
     }
 
-    @Override
+  //  @Override
     public void UndoExecute() {
         if(isNode) {
             graph.removeNode(node);

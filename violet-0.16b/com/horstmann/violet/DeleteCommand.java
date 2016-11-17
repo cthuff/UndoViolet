@@ -19,7 +19,7 @@ public class DeleteCommand implements ICommand{
         
     }
     
-    @Override
+    //@Override
     public boolean Execute() {
         Iterator iter = selectedItems.iterator();
         while (iter.hasNext())
@@ -37,7 +37,7 @@ public class DeleteCommand implements ICommand{
         return true;
     }
 
-    @Override
+    //@Override
     public void UndoExecute() {
         Iterator iter = lastselectedItems.iterator();
         while (iter.hasNext())
