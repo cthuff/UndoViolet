@@ -83,6 +83,7 @@ abstract class AbstractEdge implements Edge
          end.getConnectionPoint(toEnd.turn(180)));
    }
 
+   
    private Node start;
    private Node end;
 }
