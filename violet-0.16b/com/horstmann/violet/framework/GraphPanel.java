@@ -347,19 +347,24 @@ public class GraphPanel extends JPanel
       }
       else
       {
-         Node current = null;
+         Node currentNode = null;
+         Edge currentEdge = null;
          Object selected = delet.pop();
          if (selected instanceof Node)
          {
-            current = (Node) selected;
+            currentNode = (Node) selected;
+            double[] a = currentNode.location();
+            Point2D.Double location = new Point2D.Double(a[0],a[1]); 
+            graph.add(currentNode, location);
          }
          else if (selected instanceof Edge)
          {
-            graph.removeEdge((Edge) selected);
+            currentEdge = (Edge) selected;
+            Node s = currentEdge.getStart();
+            Node e = currentEdge.getEnd();
+            currentEdge.connect(s, e);
          }
-         double[] a = current.location();
-         Point2D.Double location = new Point2D.Double(a[0],a[1]); 
-         graph.add(current, location);
+         
       }
       if (selectedItems.size() > 0) setModified(true);
       repaint();      
@@ -371,18 +376,23 @@ public class GraphPanel extends JPanel
    {      
       if(undo.isEmpty())return;
       Node current = null;
+      Edge currentEdge = null;
       Object selected = undo.pop();
       if (selected instanceof Node)
       {
          current = (Node) selected;
+         double[] a = current.location();
+         Point2D.Double location = new Point2D.Double(a[0],a[1]); 
+         graph.add(current, location);
       }
       else if (selected instanceof Edge)
       {
-         graph.removeEdge((Edge) selected);
+         currentEdge = (Edge) selected;
+         Node s = currentEdge.getStart();
+         Node e = currentEdge.getEnd();
+         currentEdge.connect(s, e);
       }
-      double[] a = current.location();
-      Point2D.Double location = new Point2D.Double(a[0],a[1]); 
-      graph.add(current, location);
+     
       repaint();
       
    }
