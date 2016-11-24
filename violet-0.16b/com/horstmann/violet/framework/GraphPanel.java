@@ -371,7 +371,9 @@ public class GraphPanel extends JPanel
       selectNext(1);
       
    }
-
+   /**
+    * method to redo
+    */
    public void redo() 
    {      
       if(undo.isEmpty())return;
