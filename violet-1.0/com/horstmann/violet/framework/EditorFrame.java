@@ -235,7 +235,7 @@ public class EditorFrame extends JFrame
                if (frame == null) return;
                GraphPanel panel = frame.getGraphPanel();   
                panel.getManager().Redo();
-               panel.repaint();
+               panel.repaint();panel.selectNext(1);
                //panel.redo();
                }
             }));
@@ -251,6 +251,7 @@ public class EditorFrame extends JFrame
                GraphPanel panel = frame.getGraphPanel();              
                panel.getManager().Undo();
                panel.repaint();
+               panel.selectNext(1);
                //  panel.saveUndo();;
                }
             }));
