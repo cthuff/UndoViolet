@@ -1,0 +1,52 @@
+Issues list: No
+
+There is no active issue list.
+
+The project builds and works: No
+
+$ ant
+Buildfile: /tmp/projects/UndoViolet1/violet-0.16b/build.xml
+
+init:
+
+props:
+   [delete] Deleting: /tmp/projects/UndoViolet1/violet-0.16b/com/horstmann/violet/UMLEditorVersion.properties
+     [copy] Copying 1 file to /tmp/projects/UndoViolet1/violet-0.16b/com/horstmann/violet
+
+compile:
+    [javac] /tmp/projects/UndoViolet1/violet-0.16b/build.xml:32: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 4 source files to /tmp/projects/UndoViolet1/violet-0.16b
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.4
+    [javac] warning: [options] source value 1.4 is obsolete and will be removed in a future release
+    [javac] warning: [options] target value 1.4 is obsolete and will be removed in a future release
+    [javac] warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+    [javac] /tmp/projects/UndoViolet1/violet-0.16b/com/horstmann/violet/AddCommand.java:30: error: annotations are not supported in -source 1.4
+    [javac]     @Override
+    [javac]      ^
+    [javac]   (use -source 5 or higher to enable annotations)
+    [javac] /tmp/projects/UndoViolet1/violet-0.16b/com/horstmann/violet/DeleteCommand.java:22: error: annotations are not supported in -source 1.4
+    [javac]     @Override
+    [javac]      ^
+    [javac]   (use -source 5 or higher to enable annotations)
+    [javac] /tmp/projects/UndoViolet1/violet-0.16b/com/horstmann/violet/framework/CommandManager.java:7: error: generics are not supported in -source 1.4
+    [javac]     private Stack<ICommand> commandUndoStack = new Stack<ICommand>();
+    [javac]                  ^
+    [javac]   (use -source 5 or higher to enable generics)
+    [javac] 3 errors
+    [javac] 4 warnings
+
+BUILD FAILED
+/tmp/projects/UndoViolet1/violet-0.16b/build.xml:32: Compile failed; see the compiler error output for details.
+
+Total time: 0 seconds
+
+
+Status page: No
+
+Where is it??? There is one from the previous week (11 16)
+
+Commits: 
+
+Should have more incremental commits
+
+
