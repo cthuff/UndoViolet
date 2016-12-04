@@ -98,10 +98,13 @@ public abstract class Graph implements Serializable
             if (parent.addNode(n, p)) accepted = true;
          }
       }
-      if (insideANode && !accepted) 
+      if (insideANode && !accepted) {
+          ifadded = false;
          return false;
+      }
       nodes.add(n);
       needsLayout = true;
+      ifadded = true;
       return true;
    }
 
@@ -345,12 +348,19 @@ public abstract class Graph implements Serializable
       edges.add(e);
    }
 
+   public boolean ifAdded() {
+       return ifadded;
+   }
+   
+   
    private ArrayList nodes;
    private ArrayList edges;
    private transient ArrayList nodesToBeRemoved;
    private transient ArrayList edgesToBeRemoved;
    private transient boolean needsLayout;
    private transient Rectangle2D minBounds;
+    
+   private boolean ifadded; 
 }
 
 

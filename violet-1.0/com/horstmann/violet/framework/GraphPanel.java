@@ -1,5 +1,5 @@
 /*
-ƒ Violet - A program for editing UML diagrams.
+ Violet - A program for editing UML diagrams.
 
  Copyright (C) 2002 Cay S. Horstmann (http://horstmann.com)
 
@@ -109,10 +109,10 @@ public class GraphPanel extends JPanel
                                  Node prototype = (Node) tool;
                                  Node newNode = (Node) prototype.clone();
                                  command  =  new AddCommand(graph, newNode, mousePoint);
-                                 boolean added = command.Execute();
+                                 //boolean added = command.Execute();
                                  commandManager.ExecuteCommand(command);
                                  //boolean added = graph.add(newNode, mousePoint);
-                                 if (added)
+                                 if (graph.ifAdded())
                                  {
                                     setModified(true);
                                     setSelectedItem(newNode);
@@ -150,10 +150,11 @@ public class GraphPanel extends JPanel
                Node prototype = (Node) tool;
                Node newNode = (Node) prototype.clone();
                command  =  new AddCommand(graph, newNode, mousePoint);
-               boolean added = command.Execute();
+               //boolean added = command.Execute();
+	       
                commandManager.ExecuteCommand(command);
                //boolean added = graph.add(newNode, mousePoint);
-               if (added)
+               if (graph.ifAdded())
                {
                   setModified(true);
                   setSelectedItem(newNode);
@@ -328,73 +329,40 @@ public class GraphPanel extends JPanel
     */
    public void saveUndo() 
    {
-      if(delet.isEmpty())
+      Iterator iter = selectedItems.iterator();
+      if(iter.hasNext()) 
       {
-         Iterator iter = selectedItems.iterator();
-         if(iter.hasNext()) 
-         {
-            Object selected = iter.next();
-            undo.push(selected);
-            if (selected instanceof Node)
-            {
-               graph.removeNode((Node) selected);
-            }
-            else if (selected instanceof Edge)
-            {
-               graph.removeEdge((Edge) selected);
-            }
-         }
-      }
-      else
-      {
-         Node currentNode = null;
-         Edge currentEdge = null;
-         Object selected = delet.pop();
+         Object selected = iter.next();
+         undo.push(selected);
          if (selected instanceof Node)
          {
-            currentNode = (Node) selected;
-            double[] a = currentNode.location();
-            Point2D.Double location = new Point2D.Double(a[0],a[1]); 
-            graph.add(currentNode, location);
+            graph.removeNode((Node) selected);
          }
          else if (selected instanceof Edge)
          {
-            currentEdge = (Edge) selected;
-            Node s = currentEdge.getStart();
-            Node e = currentEdge.getEnd();
-            currentEdge.connect(s, e);
+            graph.removeEdge((Edge) selected);
          }
-         
       }
       if (selectedItems.size() > 0) setModified(true);
       repaint();      
       selectNext(1);
-      
    }
-   /**
-    * method to redo
-    */
+
    public void redo() 
    {      
-      if(undo.isEmpty())return;
       Node current = null;
-      Edge currentEdge = null;
       Object selected = undo.pop();
       if (selected instanceof Node)
       {
          current = (Node) selected;
-         double[] a = current.location();
-         Point2D.Double location = new Point2D.Double(a[0],a[1]); 
-         graph.add(current, location);
       }
       else if (selected instanceof Edge)
       {
-         currentEdge = (Edge) selected;
-         Node s = currentEdge.getStart();
-         Node e = currentEdge.getEnd();
-         currentEdge.connect(s, e);
+         graph.removeEdge((Edge) selected);
       }
-     
+      double[] a = current.location();
+      Point2D.Double location = new Point2D.Double(a[0],a[1]); 
+      graph.add(current, location);
       repaint();
       
    }
@@ -640,7 +608,6 @@ public class GraphPanel extends JPanel
    {
       if (obj == lastSelected)
          lastSelected = null;
-      delet.push(lastSelected);
       selectedItems.remove(obj);
    }
    
@@ -713,5 +680,4 @@ public class GraphPanel extends JPanel
    private ICommand command;
    private CommandManager commandManager = new CommandManager();
    private Stack undo = new Stack();
-   private Stack delet = new Stack();
 }
