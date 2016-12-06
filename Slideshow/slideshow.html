@@ -1,0 +1,110 @@
+`<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml' lang='en' xml:lang='en'>
+  <head>
+    <meta content='text/html; charset=utf-8' http-equiv='content-type'/> 
+    <title>Undo Violet Group</title> 
+    <meta name='copyright' content='Copyright  2016 Undo Violet Group'/> 
+    <link type='text/css' rel='stylesheet' media='screen, projection, print' href='slidy.css'/> 
+    <link type='text/css' rel='stylesheet' media='screen, projection, print' href='style.css'/> <!-- custom style rules below --> 
+    <style type='text/css'>div.slide { background-image: url("sjsu_logo.gif"); background-position: top right; background-repeat: no-repeat; }</style> 
+    <script src='slidy.js' charset='utf-8' type='text/javascript'></script> 
+ 
+  </head> 
+  <body>
+
+    <h1>CS 151 - Undo Violet</h1> 
+    <h2>Craig Huff, Qi Liu, Yuliang Pan, Hengyi Shi</h2>
+    <p class='fullimage'><img src='medium-violet.jpg' alt='Cover page image'/></p> 
+    <p><a href='https://github.com/cthuff/undoviolet'>Git Repo</a></p> 
+    
+
+    <h1>Project Design</h1>
+    <p></p>
+    <p></p>
+    <pre></pre>
+    
+    <li>Command Style</li>
+    
+    <pre><code>public interface ICommand{
+    boolean Execute();
+    void UndoExecute();}</code> </pre>
+   
+      <li><code>CommandManager</code></li>
+      <li><code>AddCommand </code></li>
+      <li><code>DeleteCommand</code></li>
+    
+    <h1>Project Implementation</h1>
+     <p></p>
+     <p></p>
+     <pre></pre>
+    <body>This is the basis for the Add and Delete Commands. </body>
+    <pre><code> // @Override
+    public boolean Execute()
+    {
+        if (isNode)
+        {
+            graph.add(node, point);
+
+        }
+        else if (!isNode)
+        {
+            graph.connect(edge, mouseDownPoint, point);
+        }
+
+        return true;
+    }
+
+    // @Override
+    public void UndoExecute()
+    {
+        if (isNode)
+        {
+            graph.removeNode(node);
+        }
+        else if (!isNode)
+        {
+            graph.removeEdge(edge);
+        }
+
+    }</code></pre>
+      <body>This is CommandManager Class. </body>
+    <pre><code>  private Stack<ICommand> commandUndoStack = new Stack<ICommand>();
+    private Stack<ICommand> commandRedoStack = new Stack<ICommand>();
+
+    public void ExecuteCommand(ICommand cmd)
+    {
+        cmd.Execute();
+        commandUndoStack.push(cmd);
+    }
+
+    public void Undo()
+    {
+        if (!commandUndoStack.empty())
+        {       
+            ICommand cmd = commandUndoStack.pop();
+            cmd.UndoExecute();
+            commandRedoStack.push(cmd);
+              
+        }
+    }
+
+    public void Redo()
+    {
+        if (!commandRedoStack.empty())
+        {
+            ICommand cmd = commandRedoStack.pop();
+            cmd.Execute();
+            commandUndoStack.push(cmd);
+        }
+    }</code></pre>
+    
+    <h1>Collaboration</h1>
+    <p></p>
+    <p></p>
+    <pre>
+</pre>
+    <li>Facebook Messenger</li>
+      <li>Git Issues</li>
+      <li>Room for improvement</li> 
+  </body> 
+</html>

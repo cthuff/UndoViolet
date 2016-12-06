@@ -10,7 +10,7 @@
     <offline-allowed/>
   </information>  
   <resources>
-    <j2se version="1.4+"/>
+    <j2se version="1.8+"/>
     <jar href="violet-1.0.jar"/>
     <property name="apple.laf.useScreenMenuBar" value="true"/>
   </resources>
